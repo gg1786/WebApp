@@ -1,25 +1,14 @@
 package com.web.controller;
 
-import com.web.student.Student;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-@RequestMapping("/student")
 public class StudentController {
 
-    @GetMapping("/")
-    public String message(){
-        return " Hello, student";
+    @GetMapping("/message")
+    public String message() {
+        return "showMessage";
     }
 
-    @RequestMapping(value = "{firstName}", method = RequestMethod.GET)
-    public @ResponseBody
-    Student getStudent(@PathVariable String firstName) {
-        Student student = new Student("?????", "Gill");
-
-        student.setFirstName("Sergei");
-        student.setSecondName("Sansei");
-        return student;
-    }
 }

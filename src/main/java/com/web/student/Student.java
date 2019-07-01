@@ -3,7 +3,6 @@ package com.web.student;
 public class Student {
 
     String firstName;
-
     String secondName;
 
     public Student() {
