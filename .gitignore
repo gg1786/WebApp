@@ -17,7 +17,7 @@
 
 # IntelligIdea files
 *.iml
-.idea
+*.idea
 out
 target
 

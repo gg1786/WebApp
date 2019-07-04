@@ -2,38 +2,27 @@ package com.web.student;
 
 public class Student {
 
-    String firstName;
-    String secondName;
+    String name;
 
     public Student() {
     }
 
-    public Student(String firstName, String secondName) {
-        this.firstName = firstName;
-        this.secondName = secondName;
+    public Student(String name) {
+        this.name = name;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getName() {
+        return name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getSecondName() {
-        return secondName;
-    }
-
-    public void setSecondName(String secondName) {
-        this.secondName = secondName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override
     public String toString() {
         return "Student{" +
-                "firstName='" + firstName + '\'' +
-                ", secondName='" + secondName + '\'' +
+                "name='" + name + '\'' +
                 '}';
     }
 }
